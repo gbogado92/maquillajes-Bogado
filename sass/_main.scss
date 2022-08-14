@@ -1,0 +1,151 @@
+.card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 25px 50px 12px rgba(0,0,0,0.5);
+
+    &__header {
+        position: relative;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+    }
+    &__precio {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.3em;
+
+
+        i {
+            font-size: 1.5em;
+
+            &:hover {
+                color: $color-secundario;
+            }
+        }
+    }
+
+
+}
+
+.noticias {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__titulo {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+/* PAGINA EMPRESA */
+
+.main {
+    padding: 50px 100px;
+    height: 800px;
+
+    &__parrafo {
+        padding: 25px 200px;
+        line-height: 2em;
+        font-size: 1.5em;
+    }
+}
+
+/* PAGINA CURSO */
+
+.servicios {
+    height: 695px;
+    background: linear-gradient(180deg, $color-secundario 50%,#eee 50%);
+
+    &__items {
+        grid-column: 1/-1;
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &-item {
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            height: 350px;
+            padding: 20px 10px;
+            text-align: center;
+
+            &:hover {
+                box-shadow: 0 25px 50px 12px rgba(0,0,0,0.5);
+            }
+        }
+
+        &-titulo {
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+    }
+
+    &__precios {
+        padding: 20px;
+        font-weight: bold;
+        font-size: 2.5em;
+
+        small {
+            font-size: .5em;
+            color: grey;
+        }
+    }
+
+    &__descripcion {
+        padding: 10px;
+        background-color: $color-secundario;
+        color: white;
+        font-weight: bold;
+    }
+
+    &__descripcion2 {
+        padding : 10px 0;
+        margin-bottom: 20px;
+        color: orange;
+
+        small {
+            color: black;
+        }
+    }
+
+    &__btn {
+        background-color: black;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0 35px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+

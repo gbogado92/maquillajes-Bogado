@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #eee; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+ul {
+  list-style-type: none; }
+
+.contenido {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.fa-regular {
+  font-size: 1.8em;
+  padding: 0 10PX; }
+
+/* PAGINA SUSCRIBITE */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  align-items: center; }
+
+/* PAGINA REGISTRATE */
+.main {
+  height: 450px; }
+
+.header-base, .header, .headerS, .headerR {
+  width: 100%;
+  background-color: black;
+  padding: 30px 20px; }
+
+.header {
+  left: 0;
+  top: 0;
+  position: sticky;
+  z-index: 1; }
+  .header__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__contenido--titulo {
+      color: white; }
+      .header__contenido--titulo:hover {
+        color: white;
+        text-decoration: none; }
+    .header__contenido--navbar {
+      display: flex; }
+      .header__contenido--navbar li {
+        margin: 0 15px; }
+        .header__contenido--navbar li a {
+          color: white;
+          font-weight: bold;
+          font-size: 1.4em; }
+          .header__contenido--navbar li a:hover {
+            color: #cf5c6f;
+            text-decoration: none; }
+
+/* PAGINA CURSO */
+.headerS h3 {
+  font-size: 1.6em; }
+
+.headerS__subtitulos {
+  padding: 40px 150px;
+  text-align: center;
+  color: white;
+  font-size: 1.3em; }
+  .headerS__subtitulos h2 {
+    padding: 0 0 20px 0; }
+
+/* PAGINA EMPRESA */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 25px 50px 12px rgba(0, 0, 0, 0.5); }
+  .card__header {
+    position: relative; }
+    .card__header img {
+      width: 100%;
+      margin-bottom: 20px; }
+  .card__title {
+    margin-bottom: 20px; }
+  .card__description {
+    margin-bottom: 20px; }
+  .card__precio {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3em; }
+    .card__precio i {
+      font-size: 1.5em; }
+      .card__precio i:hover {
+        color: #cf5c6f; }
+
+.noticias {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .noticias__titulo {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold; }
+  .noticias__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; }
+
+/* PAGINA EMPRESA */
+.main {
+  padding: 50px 100px;
+  height: 800px; }
+  .main__parrafo {
+    padding: 25px 200px;
+    line-height: 2em;
+    font-size: 1.5em; }
+
+/* PAGINA CURSO */
+.servicios {
+  height: 695px;
+  background: linear-gradient(180deg, #cf5c6f 50%, #eee 50%); }
+  .servicios__items {
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center; }
+    .servicios__items-item {
+      width: 30%;
+      background-color: white;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      height: 350px;
+      padding: 20px 10px;
+      text-align: center; }
+      .servicios__items-item:hover {
+        box-shadow: 0 25px 50px 12px rgba(0, 0, 0, 0.5); }
+    .servicios__items-titulo {
+      padding: 20px;
+      font-weight: bold;
+      font-size: 1.8em; }
+  .servicios__precios {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2.5em; }
+    .servicios__precios small {
+      font-size: .5em;
+      color: grey; }
+  .servicios__descripcion {
+    padding: 10px;
+    background-color: #cf5c6f;
+    color: white;
+    font-weight: bold; }
+  .servicios__descripcion2 {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: orange; }
+    .servicios__descripcion2 small {
+      color: black; }
+  .servicios__btn {
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 35px;
+    font-weight: bold; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  background-color: #181818;
+  color: white; }
+  .footer h2 {
+    font-size: 2em; }
+  .footer__social {
+    align-items: center;
+    font-size: 2em;
+    padding-left: 20px; }
+    .footer__social .fa-brands {
+      margin-right: 20px; }
+      .footer__social .fa-brands:hover {
+        color: #cf5c6f; }
+
+@media (max-width: 992px) {
+  .noticias__grid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 576px) {
+  .noticias__grid {
+    grid-template-columns: repeat(1, 1fr); }
+  .header__contenido--navbar {
+    display: none; } }
